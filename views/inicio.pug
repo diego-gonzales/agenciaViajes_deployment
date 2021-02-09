@@ -1,0 +1,36 @@
+extends ./layout/index
+
+block miSlider 
+    .slider 
+        h1 Río de Janiero 
+        em aventura
+
+block miContenido 
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre nosotros 
+
+        .row.mb-5 
+            .col-md-6 
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quo officiis aspernatur! Error nesciunt ducimus excepturi quasi quae hic placeat optio officia doloremque iure, accusantium temporibus quibusdam. Aperiam, harum vel!
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias vitae laboriosam eum impedit fugiat minima ducimus laudantium, perferendis mollitia molestiae tempore consectetur magni, animi aperiam quas nihil officia et.
+
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+        
+        
+        include ./layout/bloque_viajes
+    
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de Marzo de 2021 - 28 de Marzo de 2021
+                        p.precio $2,500 USD 
+
+    .container 
+        h2.mt-5.text-center Testimoniales
+
+        include ./layout/bloque_testimoniales
